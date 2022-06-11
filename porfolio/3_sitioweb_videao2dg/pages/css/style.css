@@ -1,0 +1,31 @@
+/* RESET html */
+*{
+    margin: 0;
+    padding: 0;
+    color: rgb(201, 201, 201);
+    box-sizing:border-box;
+    /* box-sizing: border-box; */
+}
+body>header{
+   background-color: rgb(199, 28, 91);
+   padding: 40px;
+   margin: 0 0 20px 0;
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+ul li{
+   list-style-type: none;
+}
+/* encapçalament */
+
+/* menú */ 
+nav {
+   background-color: rgb(1, 136, 91);
+   padding: 40px;
+   font-family: Arial, Helvetica, sans-serif; 
+}
+
+/* cos */
+main {
+   background-color: indianred;
+}

@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Formulario Registro</title>
+  <style> 
+ .background {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #ffa2e0;
+  }
+  
+  .form-register {
+    width: 400px;
+    background: #ededed;
+    padding: 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 4px;
+    font-family: 'calibri';
+    color: rgb(0, 0, 0);
+    box-shadow: 7px 13px 37px #000;
+  }
+  
+  .form-register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  
+  .controls {
+    width: 100%;
+    background: #fddcf5;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #ff84d6;
+    font-family: 'calibri';
+    font-size: 18px;
+    color: rgb(83, 23, 126);
+  }
+  
+  .form-register p {
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+  }
+  
+  .form-register a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .form-register a:hover {
+    color: rgb(36, 14, 97);
+    text-decoration: underline;
+  }
+  
+  .form-register .botons {
+    width: 100%;
+    background: #642aa7;
+    border: none;
+    padding: 12px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  .caja_comentarios{
+    width: 100%;
+    background: #df8fff;
+    padding: 1px;
+    color: white;
+    margin: 16px 0;
+    font-size: 16px;
+  }
+  .país{
+    font-family: 'calibri';
+    font-size: 18px;
+    border: #1f53c5;
+    
+  }
+</style>
+</head>
+<body>
+  <section class="form-register">
+    <h4>Registro Formulario TWITCH</h4>
+    <input class="controls" type="text" name="nombres" id="nombres" placeholder="Nombre">
+    <input class="controls" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+    <input class="controls" type="email" name="correo" id="correo" placeholder="Correo electrónico">
+    <input class="controls" type="Edad" name="correo" id="correo" placeholder="Edad">
+
+    <input class="controls" type="password" name="correo" id="correo" placeholder="Ingrese su Contraseña">
+    <div class="Idioma">Idioma</div><br>
+    <input  type="checkbox" name="idioma1" value="Español">Español<br >
+    <input  type="checkbox" name="idioma2" value="Inglés">Inglés</div><br>  
+    <div class="país">País/Región
+    <select name="país" >
+        <option value=""></option>
+        <option value="España">España</option>
+        <option value="UK">UK</option>
+        <option value="USA">USA</option>
+    </select>
+    </div><br>
+    <div class="Hobbbies"><br>Hobbies</div><br >
+            <input  type="checkbox" name="Leer" value="Leer">Leer<br >
+            <input  type="checkbox" name="Deporte" value="Deporte">Deporte<br > 
+            <input  type="checkbox" name="Arte" value="Arte">Arte<br >
+            <input  type="checkbox" name="Videojuegos" value="Videojuegos">Videojuegos<br > 
+        </select>
+        </div><br>
+    Deje un comentario personal <br>
+    <div class="caja_comentarios">
+    <textarea name="text-decoration" rows="6" cols="47"  Deje un comentario personal aquí.></textarea>
+    </textarea> <br>
+    </div>
+    <input type="submit" name="Guardar">
+    <input type="reset" name="Limpiar">
+
+
+    <p>Estoy de acuerdo con <a href="#">Terminos y Condiciones</a></p>
+    <input class="botons" type="submit" value="Registrar">
+    <p><a href="#">¿Ya tengo Cuenta?</a></p>
+    </section>
+

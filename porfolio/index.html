@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Mariano</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display=swap" rel="stylesheet"> 
+    
+	<style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+		header{
+			background-color: #000000;
+			color: white;
+		}
+        html{
+            font-size: 32px;
+        }
+        img{
+            width: auto;
+            height: auto;
+        }
+        a{
+            text-decoration: none;
+            font-family: var(--andanapro);
+            text-transform: uppercase;
+            color: var(--blau);
+        }
+        :root{
+            --blau: #000000;
+            --groc: black;
+            --gris: #e5e5e5;
+            --opensans: 'Open Sans', sans-serif;
+        }
+		.footerA{
+			text-align: center;
+			display: flex;
+            align-items: center;
+            flex-direction: column;
+		}
+        .container{
+            padding: 0 2em;
+            width: 100%;
+			justify-content: center;
+			
+        }
+        body>header{
+            display: flex;
+            padding: 50px 0;
+            text-align: center;
+            height: 100vh;
+            background-color: var(--groc);
+        }
+        header .container{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+			background-color: #000000;
+			color: white;
+        }
+        hgroup{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 100%;
+			background-color: #000000;
+			color: white;
+        }
+        h1{
+            font-size: 1.5em;
+            margin: 0 0 2em 0;
+            font-family: var(--opensans);
+            color: white;
+        }
+        h2{
+            font-size: 1em;
+            color: white;
+            width: 50%;
+        }
+        h3{
+            font-family: var(--opensans);
+        }
+        nav{
+			color: white;
+            display: flex;
+            padding: 1em 3em;
+            width: 100%;
+            justify-content: space-between;
+			border-radius: 15px;
+			border-color: white;
+        }
+        nav a{
+			color: white;
+            font-size: 0.75em;
+			border-radius: 15px;
+			border-color: white;
+        }
+
+		nav a:hover{
+			border-radius: 25px;
+			color: black;
+			background-color: white;
+			font-size: 23px;
+		}
+
+        section:first-child .container{
+            height: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            background-color: var(--blau);
+            color: white;
+        }
+        section:last-child .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        /*CARD PORTADES*/
+        .cover{
+            display: grid;
+            flex-direction: column;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-grow: 1;
+            padding: 0.5em;
+			padding-right: 1em;
+            margin: 01em;
+            background-color:black;
+			border-radius: 15px;
+			border-color: white;
+			border-width: thin thick medium;
+			margin-bottom: 100px;
+        }
+        .cover .cover_img{
+            display: flex;
+            object-fit: cover;
+            width: 100%;
+            height: 200px;
+           
+        }
+        .cover .cover_img img{
+            object-fit: contain;
+            object-position: center;
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        .cover header{
+            width: 100%;
+            background-color: black;
+			color: white;
+            display: flex;
+            height: 50px;
+            align-items: center;
+			margin: 0.75em 0 0 0;
+            text-align: center;
+        }
+        .cover h3{
+            font-family: var(--andanapro);
+            font-size: 0.5em;
+            color: var(--blau);
+        }
+        /*CARD DISSENYADORS*/
+        .card_dissenyadors{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            align-items: center;
+            width: 300px;
+            box-shadow: var(--blau) 0px 0px 15px;
+        }
+        .dissenyadors_img{
+            width: 250px;
+            height: 250px;
+        }
+        .dissenyadors_img img{
+            width: 250px;
+            height: 250px;
+        }
+        .card_dissenyadors header{
+            margin: 0.75em 0 0 0;
+            text-align: center;
+        }
+
+        section:last-child{
+            height: 100%;
+            background-color: var(--gris);
+            color: var(--blau);
+        }
+        footer{
+            background-color: var(--groc);
+            color: white;
+        }
+        footer .container{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+            align-items: center;
+            flex-grow: 1;
+            min-height: 50px;
+            padding: 0.5em;
+            margin: 0.1em;
+            width: 100%;
+			color: white;
+        }
+        
+      
+        footer p:last-child{
+        
+
+        }
+
+        footer p a{
+            font-family: var(--opensans);
+            text-transform: capitalize;
+            font-size: 0.75em;
+			color: white;
+        }
+
+		@media(max-width:600px){
+			html{
+				font-size: 28px;
+			}
+			.container{
+				justify-content: center;
+			}
+
+			.card_dissenyadors{
+            display: flex;
+            flex-direction: column;
+            flex-grow: 1;
+            margin: 1em;
+            padding: 0.75em;
+            align-items: center;
+            width: 200px;
+            box-shadow: var(--blau) 0px 0px 15px;
+        	}
+			.cover{
+				width: 200px;
+				height: 200px;
+			}
+		}
+
+		@media(max-width:756px){
+			.cover{
+				width: 170px;
+				height: 170px;
+			}
+				
+		}
+
+		@media(max-width:742px){
+			.cover{
+				width: 170px;
+				height: 170px;
+			}
+				
+		}
+
+		@media(max-width:656px){
+			.cover{
+				width: 150px;
+				height: 150px;
+			}
+				
+		}
+		@media(max-width:490px){
+			html{
+				font-size: 22px;
+			}
+			.container{
+				justify-content: center;
+			}
+			.dissenyadors_img{
+            width: 150px;
+            height: 150px;
+        }
+			.dissenyadors_img img{
+            width: 150px;
+            height: 150px;
+			justify-content: center;
+        }
+		@media(max-width:656px){
+			html{
+				font-size: 18px;
+			}
+				
+		}
+				
+		}
+		/*.one {
+  grid-column: 1 / 3;
+  grid-row: 1;
+}
+.two {
+  grid-column: 2 / 4;
+  grid-row: 1 / 3;
+}
+.three {
+  grid-column: 1;
+  grid-row: 2 / 5;
+}
+.four {
+  grid-column: 3;
+  grid-row: 3;
+}
+.five {
+  grid-column: 2;
+  grid-row: 4;
+}
+.six {
+  grid-column: 3;
+  grid-row: 4;
+}
+*/
+        /* @media (max-width:550px){
+            html{
+                font-size:20px;
+            }
+            h1{
+                color:green;
+            }
+            section:first-child .container{
+                flex-direction: column;
+            }
+            .cover{
+                display: flex;
+                align-items: center;
+                width: 500px;
+                height: 450px;
+                background-color: crimson;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: center;
+                flex-grow: 1;
+            }
+            .cover_img{
+                padding: 0;
+                width: 100%;
+                height: 300px;
+                align-items: center;
+                justify-content: flex-start;
+                background-color: darkgoldenrod;
+            }
+            .cover_img img{
+                height: 250px;
+                object-fit: cover;
+                object-position: center center;
+            }
+            .cover header{
+                display: flex;
+                width: 50%;
+                height: 100%;
+                flex-direction:column;
+                justify-content: center;
+                align-items: center;
+            }
+            .cover header h3{
+                font-size: 1.5em;
+                text-align: center;
+            }
+        } */
+    </style>
+</head>
+<body>
+   <header>
+        <div class="container">
+            <hgroup>
+                <h1>Portfolio Trabajos</h1>
+                <h2>Hola, soy Mariano, estudiante de diseño gráfico y os presento mi porfolio de la asignatura de sistema de representación avanzada.</h2>
+            </hgroup>
+           <!--  <nav>
+               					<a href="1_sitioweb_2dg/index.html">Ejercicio1</a>
+								<a href="2_sitioweb_img2dg/pages/index.html">Ejercicio2</a>
+								<a href="3_sitioweb_videao2dg/pages/index.html">Ejercicio3</a>
+								<a href="4_gallery_2dg/pages/index.html">Ejercicio4</a>
+								<a href="grip_2dg/sitioweb/index.html">Ejercicio5</a>
+								<a href="grid/index.html">Ejercicio6</a>
+            </nav>--->
+        </div>
+    </header>
+    <main>
+            <section id="#portades">
+                <div class="container">
+                    <div class="cover" class="one">
+                        <div class="cover_img">
+							<a href="1_sitioweb_2dg/index.html"><img src="img/p1.png" style="width: 200px; height:300px"></a>                      
+						  </div>
+                        
+                    </div>
+                    <div class="cover" class="two">
+                        <div class="cover_img">
+							<a href="2_sitioweb_img2dg/pages/index.html"><img src="img/p2.png" style="width: 200px; height:300px"></a> 
+                        </div>
+                        
+                    </div>
+                    <div class="cover" class="three">
+                        <div class="cover_img">
+							<a href="3_sitioweb_videao2dg/pages/index.html"><img src="img/p3.png" style="width: 200px; height:300px"></a> 
+                        </div>
+                        
+                    </div>
+                    <div class="cover" class="four">
+                        <div class="cover_img">
+                            <a href="4_gallery_2dg/pages/index.html"><img src="img/p4.png" style="width: 200px; height:300px"></a>  
+                        </div>
+                        
+                    </div>
+                    <div class="cover" class="five">
+                        <div class="cover_img">
+							<a href="grid_cara2dg/index.html"><img src="img/p5.png" style="width: 200px; height:300px"></a> 
+                        </div>
+                    </div>
+                    <div class="cover" class="six">
+                        <div class="cover_img">
+                            <a href="neoplasticismo/index.html"><img src="img/p6.png" style="width: 200px; height:300px"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="#dissenyadorxs">
+                <h3 style="text-align: center;">FreeCodeCamp</h3>
+                <div class="container">
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <a href="dojacat/index.html/index.html"><img src="img/p7.png"></a>
+                        </div>
+                    </div>
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <a href="product/index.html/index.html"><img src="img/p8.png"></a>
+                        </div>
+                    </div>
+                    <div class="card_dissenyadors">
+                        <div class="dissenyadors_img">
+                            <a href="formulario/index.html/index.html"><img src="img/p9.png"></a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        
+    </main>
+    <footer id="#xxss">
+            <h3 style="text-align: center;">Contactos</h3>
+            <div class="container" class="footerA">
+                <p><a href="https://www.instagram.com/pinal_tattoo/">Instagram</a></p>
+            </div>
+    </footer>
+</body>
+</html>
